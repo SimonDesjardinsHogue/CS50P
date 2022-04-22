@@ -1,6 +1,15 @@
-x = 1
-y = 2
+x = float(input("What's x? "))
+y = float("What's y? "))
 
-z = x + y
+z = round (x + y)
 
-print(z)
+print(f"{z:,}")
+
+
+
+x = float(input("What's x? "))
+y = float("What's y? "))
+
+z = round (x / y, 2)
+
+print(f"{z:,}")
