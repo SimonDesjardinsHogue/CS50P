@@ -7,14 +7,24 @@ def main():
 
 def dollars_to_float(d):
     # TODO
-    d = float(dollars)
-    dollars = d.lstrip("$")
+    # Accept a str
+    # Formated ##.##
+    # Remove leading $
+    # return as a float
+
+    dnosign = d.lstrip("$")
+    return float(dnosign)
 
 
 def percent_to_float(p):
     # TODO
-    p = float(percent)
-    percent = p.rstrip("%")
+    # Accept a str
+    # Formated ##.##
+    # Remove ending %
+    # return as a float
+
+    pnosign = p.rstrip("%")
+    return float(pnosign) / 100
 
 
 main()
