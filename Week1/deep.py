@@ -1,5 +1,5 @@
 def main():
-    x = input("What is the Answer to the Great Question of Life, the Universe and Everything\n").strip().lower()
+    x = input("What is the Answer to the Great Question of Life, the Universe and Everything? ").strip().lower()
     if reponse(x):
         print("Yes")
     else:
