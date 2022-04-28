@@ -1,17 +1,18 @@
 def main():
     file = input("File name: ").strip().lower()
+    filesplit = file.split('.')[1]
 
-    if file == ".gif":
+    if filesplit == "gif":
         print("image/gif")
-    elif file == ".jpg" or file == ".jpeg":
+    elif filesplit == "jpg" or filesplit == "jpeg":
         print("image/jpeg")
-    elif file == ".png":
+    elif filesplit == "png":
         print("image/png")
-    elif file == ".pdf":
+    elif filesplit == "pdf":
         print("application/pdf")
-    elif file == ".txt":
-        print("application/txt")
-    elif file == ".zip":
+    elif filesplit == "txt":
+        print("text/plain")
+    elif filesplit == "zip":
         print("application/zip")
     else:
         print("application/octet-stream")
